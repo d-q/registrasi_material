@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "cf3ada65-e74a-450d-88d5-e0faab569622",
+		"name": "RegistrasiMaterial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8069/material",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"params\":{}}"
+				},
+				"url": {
+					"raw": "http://localhost:8069/material",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8069",
+					"path": [
+						"material"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8069/material/4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"params\":{}}"
+				},
+				"url": {
+					"raw": "http://localhost:8069/material/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8069",
+					"path": [
+						"material",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8069/material",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"params\":{\r\n        \"code\":\"kn\",\r\n        \"name\":\"kain\",\r\n        \"type\":\"cotton\",\r\n        \"price\":503,\r\n        \"supplier\":14\r\n        }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8069/material",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8069",
+					"path": [
+						"material"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8069/material/38",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"params\":{\r\n        \"code\":\"kn\",\r\n        \"name\":\"kain cotton\",\r\n        \"type\":\"cotton\",\r\n        \"price\":503,\r\n        \"supplier\":14\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8069/material/38",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8069",
+					"path": [
+						"material",
+						"38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8069/unlink_material/38",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"params\":{}}"
+				},
+				"url": {
+					"raw": "http://localhost:8069/unlink_material/38",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8069",
+					"path": [
+						"unlink_material",
+						"38"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

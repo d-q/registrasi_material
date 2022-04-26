@@ -1,0 +1,1 @@
+from . import test_registrasi_material
